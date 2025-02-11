@@ -32,4 +32,4 @@ const carousel = document.getElementById("carousel");
     prev.addEventListener("click", () => showSlide(index - 1));
 
     // Auto Slide
-    setInterval(() => showSlide(index + 1), 5000);
+    setInterval(() => showSlide(index + 1), 8000);

@@ -167,44 +167,63 @@
         </div>
       </div>
     </nav>
-    <main class="flex justify-center items-center min-h-screen relative pt-10">
-      <div class="relative w-[400px] max-w-2xl overflow-hidden mr-100">
+    <!--Maaaain-->
+    <main class="flex justify-center items-center min-h-screen pt-10">
+      <div
+        class="flex flex-wrap md:flex-nowrap w-full h-screen justify-between"
+      >
+        <!-- Carrusel a la izquierda -->
         <div
-          class="flex transition-transform duration-700 ease-in-out"
-          id="carousel"
+          class="relative overflow-hidden w-full md:w-[40%] max-h-[calc(100vh-3rem)]"
         >
           <div
-            class="min-w-full bg-blue-500 text-white h-64 flex items-center justify-center text-xl font-bold"
+            class="flex transition-transform duration-700 ease-in-out h-full"
+            id="carousel"
           >
-            Slide 1
+            <div class="min-w-full h-full flex items-center justify-center">
+              <img
+                src="resource/p1.jpg"
+                class="h-full w-auto max-w-full object-contain"
+              />
+            </div>
+            <div class="min-w-full h-full flex items-center justify-center">
+              <img
+                src="resource/p2.jpg"
+                class="h-full w-auto max-w-full object-contain"
+              />
+            </div>
+            <div class="min-w-full h-full flex items-center justify-center">
+              <img
+                src="resource/p3.jpg"
+                class="h-full w-auto max-w-full object-contain"
+              />
+            </div>
           </div>
-          <div
-            class="min-w-full bg-green-500 text-white h-64 flex items-center justify-center text-xl font-bold"
-          >
-            Slide 2
-          </div>
-          <div
-            class="min-w-full bg-purple-500 text-white h-64 flex items-center justify-center text-xl font-bold"
-          >
-            Slide 3
-          </div>
-        </div>
-        <!-- Controles -->
-        <button
-          id="prev"
-          class="absolute top-1/2 left-4 transform -translate-y-1/2 text-grey p-2 rounded-full bg-transparent hover:bg-white/10"
-        >
-          &#9664;
-        </button>
-        <button
-          id="next"
-          class="absolute top-1/2 right-4 transform -translate-y-1/2 text-grey p-2 rounded-full hover:bg-white/10"
-        >
-          &#9654;
-        </button>
-      </div>
-      
 
+          <!-- Controles -->
+          <button
+            id="prev"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 p-2 rounded-full bg-white/50 hover:bg-white/70"
+          >
+            &#9664;
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 p-2 rounded-full bg-white/50 hover:bg-white/70"
+          >
+            &#9654;
+          </button>
+        </div>
+
+        <!-- Contenido a la derecha -->
+        <div class="hidden md:block w-full md:w-[40%] p-4">
+          <h2 class="text-xl mb-4"><br />Contenido adicional</h2>
+          <p>
+            Esto es una sección para mostrar información, botones o cualquier
+            contenido a la derecha del carrusel en la versión de escritorio.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
